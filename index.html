@@ -20,16 +20,40 @@
   <body>
     <!-- Link to JS file -->
     <script src="./js/script.js"></script>
-    <h1>Age and Movie Ratings</h1>
-    <h3>Welcome!</h3>
-    <p>Welcome! Use this website to verify which movies you are allowed to watch, based on their ratings and your age. Please input your information below:</p>
-    <!-- Form for user input -->
-    <form action="javascript:ageSent()">
-      <label for="age">How old are you?</label>
-      <input type="number" step="1" min="1" id="user-age" placeholder="Your age..."><br><br>
-      <input type="submit" value="Check">
-    </form>
-    <!-- Div for results -->
-    <div id="results"></div>
+    <!-- Table for style: placing "curtain" images beside text -->
+    <table>
+      <tr>
+        <!-- First curtain image (left side) -->
+        <td class="curtain">
+          <img src="./images/curtain.jpg" alt="curtain">
+        </td>
+        <!-- Centre cell - contains most of the page's information -->
+        <td id="body">
+          <!-- Div to limit text scrolling to boundaries -->
+          <div id="scroll-boundary">
+            <!-- Making text scroll across screen - learned from https://www.html.am/html-codes/marquees/html-scrolling-text.cfm -->
+            <marquee behavior="scroll" direction="left" scrollamount="10"><h1>Age and Movie Ratings</h1></marquee>
+          </div>
+          <!-- Div to fix margins -->
+          <div id="margins">
+            <h3>Welcome!</h3>
+            <p>Welcome! Use this website to verify which movies you are allowed to watch, based on their ratings and your age. Please input your information below:</p>
+            <h3>Your Input:</h3>
+            <!-- Form for user input -->
+            <form action="javascript:ageSent()">
+              <label for="age">How old are you?</label>
+              <input type="number" step="1" min="1" id="user-age" placeholder="Your age..."><br><br>
+              <input type="submit" id="button" value="Check">
+            </form>
+            <!-- Div for results -->
+            <div id="results"></div>
+          </div>
+        </td>
+        <!-- Last curtain image - right side -->
+        <td class="curtain">
+          <img src="./images/curtain.jpg" alt="curtain">
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

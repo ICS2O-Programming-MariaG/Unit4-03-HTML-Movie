@@ -1,11 +1,60 @@
 /* Created by: MariaG
-* Created on: April 25, 2022
+* Created on: May 1, 2022
 * This CSS file defines the style for index.html
-* ICS2O-Unit3-04-HTML-FahrenheitCelsius
+* ICS2O-Unit4-03-HTML-Movie
 */
 
 body {
-  width: 80%;
-  margin: 5% 10%;
   font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.curtain {
+  width: 20%;
+}
+
+#body {
+  width: 60%;
+  background-color: #242b74;
+}
+
+img {
+  width: 100%;
+}
+
+table {
+  margin: 0px;
+}
+
+h1 {
+  color: #fafc5d;
+}
+
+h3 {
+  color: #ffdac8;
+}
+
+#scroll-boundary {
+  width: 80%;
+  margin-left: 10%;
+  border: 2px dashed black;
+}
+
+#margins {
+  width: 80%;
+  margin: 30px 10%;
+}
+
+#results {
+  color: #fafc5d;
+  margin-top: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+
+#button {
+  background-color: #fb8e83;
+  padding: 10px 20px;
+  border: none;
 }
